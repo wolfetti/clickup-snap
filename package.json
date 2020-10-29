@@ -1,7 +1,7 @@
 {
   "name": "clickup-snap",
   "version": "1.0.0",
-  "repository": "",
+  "repository": "https://github.com/wolfetti/clickup-snap.git",
   "description": "Snap for ClickUp",
   "main": "src/index.js",
   "scripts": {
