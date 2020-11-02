@@ -20,20 +20,9 @@
     "snap": {
       "category": "Development",
       "confinement": "strict",
-      "grade": "devel",
+      "grade": "stable",
       "summary": "Simple ClickUp web application wrapper",
-      "synopsis": "Simple ClickUp web application wrapper",
-      "plugs": [
-        "browser-sandbox"
-      ],
-      "desktop": [
-        "Encoding=UTF-8",
-        "Name=ClickUp",
-        "Comment=Simple ClickUp web application wrapper",
-        "Categories=Development",
-        "Type=Application",
-        "Terminal=0"
-      ]
+      "synopsis": "Simple ClickUp web application wrapper"
     },
     "linux": {
       "icon": "src/img/clickup-logo-gradient.png",
