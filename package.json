@@ -16,7 +16,7 @@
     "electron-builder": "^22.9.1"
   },
   "build": {
-    "appId": "com.github.wolfetti.snap.clickup",
+    "appId": "clickup",
     "linux": {
       "icon": "src/img/clickup-logo-gradient.png"
     }
