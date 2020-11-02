@@ -1,8 +1,0 @@
-name: clickup
-base: core18
-version: '1.0.0'
-summary: Simple container for official clickup web application
-description: |
-  This is a simple electron container for official clickup web application: https://app.clickup.com
-grade: devel
-confinement: devmode

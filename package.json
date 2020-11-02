@@ -17,8 +17,15 @@
   },
   "build": {
     "appId": "clickup",
+    "snap":{
+      "confinement": "strict",
+      "grade": "devel"
+
+    },
     "linux": {
-      "icon": "src/img/clickup-logo-gradient.png"
+      "category": "Development",
+      "icon": "src/img/clickup-logo-gradient.png",
+      "target": ["snap"] 
     }
   }
 }
