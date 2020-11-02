@@ -2,7 +2,7 @@
   "name": "clickup",
   "version": "1.0.0",
   "repository": "https://github.com/wolfetti/clickup-snap.git",
-  "description": "Snap for ClickUp",
+  "description": "This is a simple electron container for official ClickUp web application: https://app.clickup.com",
   "main": "src/index.js",
   "scripts": {
     "start": "electron .",
@@ -17,15 +17,29 @@
   },
   "build": {
     "appId": "clickup",
-    "snap":{
+    "snap": {
+      "category": "Development",
       "confinement": "strict",
-      "grade": "devel"
-
+      "grade": "devel",
+      "summary": "Simple ClickUp web application wrapper",
+      "synopsis": "Simple ClickUp web application wrapper",
+      "plugs": [
+        "browser-sandbox"
+      ],
+      "desktop": [
+        "Encoding=UTF-8",
+        "Name=ClickUp",
+        "Comment=Simple ClickUp web application wrapper",
+        "Categories=Development",
+        "Type=Application",
+        "Terminal=0"
+      ]
     },
     "linux": {
-      "category": "Development",
       "icon": "src/img/clickup-logo-gradient.png",
-      "target": ["snap"] 
+      "target": [
+        "snap"
+      ]
     }
   }
 }
