@@ -1,0 +1,23 @@
+name: clickup
+version: '1.0.0' # just for humans, typically '1.2+git' or '1.3.2'
+summary: Simple ClickUp web application wrapper
+icon: src/img/32x32.png
+license: MIT
+description: |
+    This is a simple electron container for official ClickUp web application: https://app.clickup.com
+
+confinement: strict
+grade: devel
+
+parts:
+  electron-app:
+    plugin: nodejs
+    build: npm install && npm run dist
+    source: .
+
+app:
+    clickup:
+        command: $SNAP/clickup
+
+environment:
+    TMPDIR: $XDG_RUNTIME_DIR

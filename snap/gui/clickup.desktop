@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Click Up
+Comment=Simple ClickUp web application wrapper
+Exec=clickup
+Icon=$SNAP/icon.png
+Categories=Development;
+Version=1.0.0
+Type=Application
+Terminal=0
